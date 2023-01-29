@@ -1,11 +1,13 @@
 import Layout from "../../components/layout";
 import student from "../../assets/json/student.json";
+import faq from "../../assets/json/faq.json";
 import Lottie from "react-lottie";
 import Title from "./components/title";
 import CardPrograms from "./components/card_programs";
 import reading from "../../assets/img/read.png";
 import writing from "../../assets/img/letter.png";
 import listening from "../../assets/img/listening.png";
+import Faq from "./components/faq";
 
 export default function Home() {
   return (
@@ -39,8 +41,8 @@ export default function Home() {
           />
         </article>
       </section>
-      <section id="programs" className="my-8">
-        <Title>Programs</Title>
+      <section id="programs" className="mt-8">
+        <Title width={"w-40"}>Programs</Title>
         <div className="flex space-x-5 justify-center mt-10">
           <CardPrograms
             icon={reading}
@@ -64,6 +66,35 @@ export default function Home() {
             }
           />
         </div>
+      </section>
+      <section id="faq" className="my-10 flex space-x-10">
+        <article className="w-2/6">
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: faq,
+              rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice",
+              },
+            }}
+          />
+        </article>
+        <article className="w-1/2 flex flex-col items-start">
+          <Title width={"w-20 mb-5"}>FAQ</Title>
+          <Faq
+            question={"Kamu sudah makan?"}
+            answer={
+              "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
+            }
+          />
+          <Faq
+            question={"Kamu sudah minum?"}
+            answer={
+              "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
+            }
+          />
+        </article>
       </section>
     </Layout>
   );
