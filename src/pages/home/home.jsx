@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import student from "../../assets/json/student.json";
 import faq from "../../assets/json/faq.json";
+import about from "../../assets/json/about us.json";
 import Lottie from "react-lottie";
 import Title from "./components/title";
 import CardPrograms from "./components/card_programs";
@@ -94,6 +95,32 @@ export default function Home() {
               "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
             }
           />
+        </article>
+      </section>
+      <section id="about_us" className="my-10">
+        <Title width={"w-32 text-center"}>About us</Title>
+        <article className="flex justify-between mt-9">
+          <p className="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem
+            voluptatibus officiis commodi non perferendis incidunt expedita in
+            beatae consectetur dignissimos itaque perspiciatis repellat
+            consequatur, deserunt aut cupiditate. Reiciendis ut maiores cum
+            facilis debitis soluta. Laudantium voluptatem sunt doloremque
+            dignissimos perspiciatis, et quaerat veniam delectus accusamus
+            repellat, animi a atque.
+          </p>
+          <div className="">
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: about,
+                rendererSettings: {
+                  preserveAspectRatio: "xMidYMid slice",
+                },
+              }}
+            />
+          </div>
         </article>
       </section>
     </Layout>
