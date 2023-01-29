@@ -1,4 +1,3 @@
-import Footer from "./footer";
 import Navbar from "./navbar";
 import logo from "../assets/img/logo-fluent.png";
 
