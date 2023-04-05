@@ -13,13 +13,17 @@ import Faq from "./components/faq";
 export default function Home() {
   return (
     <Layout>
-      <section id="home" className="flex justify-between items-center">
-        <article className="w-1/2">
+      <section id="home" className="flex justify-between items-start">
+        <article className="w-1/2 mt-10">
           <h1 className="text-4xl font-bold">
             <span className="text-blue-theme">Revealing</span> Your True
-            Potential of Mastering English
+            Potential of Mastering <span className="text-blue-theme">English</span>
           </h1>
           <p className="my-2 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            voluptate itaque ad nihil, voluptatibus consequatur eum atque
+            accusantium tenetur fugit quaerat deleniti assumenda laudantium
+            cumque doloribus ratione possimus libero labore?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
             voluptate itaque ad nihil, voluptatibus consequatur eum atque
             accusantium tenetur fugit quaerat deleniti assumenda laudantium
@@ -29,7 +33,7 @@ export default function Home() {
             Get Started
           </button>
         </article>
-        <article className="w-2/5">
+        <article className="w-2/6">
           <Lottie
             options={{
               loop: true,
@@ -43,7 +47,7 @@ export default function Home() {
         </article>
       </section>
       <section id="programs" className="mt-8">
-        <Title width={"w-40"}>Programs</Title>
+        <Title width={"w-60"}>Popular Course</Title>
         <div className="flex space-x-5 justify-center mt-10">
           <CardPrograms
             icon={reading}
@@ -68,8 +72,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="faq" className="my-10 flex space-x-10">
-        <article className="w-2/6">
+      <section id="faq" className="mb-10 mt-20 flex space-x-10">
+        <article className="w-1/4">
           <Lottie
             options={{
               loop: true,
@@ -84,13 +88,19 @@ export default function Home() {
         <article className="w-1/2 flex flex-col items-start">
           <Title width={"w-20 mb-5"}>FAQ</Title>
           <Faq
-            question={"Kamu sudah makan?"}
+            question={"How to join?"}
             answer={
               "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
             }
           />
           <Faq
-            question={"Kamu sudah minum?"}
+            question={"What is the most popular course?"}
+            answer={
+              "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
+            }
+          />
+          <Faq
+            question={"How to pay course?"}
             answer={
               "Lorem ipsum dolor sit amet consectetur. Et ullamcorper libero aliquet integer eu nunc massa pellentesque quis. Eros pellentesque cras nibh."
             }
@@ -107,9 +117,15 @@ export default function Home() {
             consequatur, deserunt aut cupiditate. Reiciendis ut maiores cum
             facilis debitis soluta. Laudantium voluptatem sunt doloremque
             dignissimos perspiciatis, et quaerat veniam delectus accusamus
-            repellat, animi a atque.
+            repellat, animi a atque. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iusto rem voluptatibus officiis commodi non
+            perferendis incidunt expedita in beatae consectetur dignissimos
+            itaque perspiciatis repellat consequatur, deserunt aut cupiditate.
+            Reiciendis ut maiores cum facilis debitis soluta. Laudantium
+            voluptatem sunt doloremque dignissimos perspiciatis, et quaerat
+            veniam delectus accusamus repellat, animi a atque.
           </p>
-          <div className="">
+          <div className="w-[300rem]">
             <Lottie
               options={{
                 loop: true,

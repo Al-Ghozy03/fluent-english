@@ -13,7 +13,8 @@ export default function Layout({ children }) {
           <div className="w-1/6">
             <img src={logo} alt={logo} className="h-20" />
             <p className="text-xs">
-              Website for learning english from experienced mentors
+              Jl. Raya Panglegur No.Km 3,5, Barat, Panglegur, Kec. Tlanakan,
+              Kabupaten Pamekasan, Jawa Timur 69371
             </p>
           </div>
           <div className="flex space-x-10">
@@ -36,6 +37,7 @@ export default function Layout({ children }) {
             </article>
           </div>
         </div>
+        <p className="text-xs text-center mt-3">© Fluent English 2023</p>
       </footer>
     </main>
   );
